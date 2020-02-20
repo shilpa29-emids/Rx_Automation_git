@@ -27,6 +27,7 @@ namespace MyTestfeb20
     public partial class MyTestfeb20Repository : RepoGenBaseFolder
     {
         static MyTestfeb20Repository instance = new MyTestfeb20Repository();
+        MyTestfeb20RepositoryFolders.OrangeHRMAppFolder _orangehrm;
 
         /// <summary>
         /// Gets the singleton class instance representing the MyTestfeb20Repository element repository.
@@ -43,6 +44,7 @@ namespace MyTestfeb20
         public MyTestfeb20Repository() 
             : base("MyTestfeb20Repository", "/", null, 0, false, "f327def2-7fb2-4f3f-a561-1c0e1ccd2cdd", ".\\RepositoryImages\\MyTestfeb20Repositoryf327def2.rximgres")
         {
+            _orangehrm = new MyTestfeb20RepositoryFolders.OrangeHRMAppFolder(this);
         }
 
 #region Variables
@@ -60,6 +62,15 @@ namespace MyTestfeb20
                 return _selfInfo;
             }
         }
+
+        /// <summary>
+        /// The OrangeHRM folder.
+        /// </summary>
+        [RepositoryFolder("e2e8a552-6d4d-43ff-bd63-8519317e95d3")]
+        public virtual MyTestfeb20RepositoryFolders.OrangeHRMAppFolder OrangeHRM
+        {
+            get { return _orangehrm; }
+        }
     }
 
     /// <summary>
@@ -68,6 +79,150 @@ namespace MyTestfeb20
     [System.CodeDom.Compiler.GeneratedCode("Ranorex", global::Ranorex.Core.Constants.CodeGenVersion)]
     public partial class MyTestfeb20RepositoryFolders
     {
+        /// <summary>
+        /// The OrangeHRMAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("e2e8a552-6d4d-43ff-bd63-8519317e95d3")]
+        public partial class OrangeHRMAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _txtusernameInfo;
+            RepoItemInfo _txtpasswordInfo;
+            RepoItemInfo _btnloginInfo;
+            RepoItemInfo _orangehrmInfo;
+
+            /// <summary>
+            /// Creates a new OrangeHRM  folder.
+            /// </summary>
+            public OrangeHRMAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("OrangeHRM", "/dom[@domain='opensource-demo.orangehrmlive.com']", parentFolder, 30000, null, false, "e2e8a552-6d4d-43ff-bd63-8519317e95d3", "")
+            {
+                _txtusernameInfo = new RepoItemInfo(this, "TxtUsername", ".//input[#'txtUsername']", 30000, null, "a668bf9e-4f35-4c9c-a6ff-8b573b8e8942");
+                _txtpasswordInfo = new RepoItemInfo(this, "TxtPassword", ".//input[#'txtPassword']", 30000, null, "b9639e2d-ca1a-490f-b8f3-485cccb4d722");
+                _btnloginInfo = new RepoItemInfo(this, "BtnLogin", ".//input[#'btnLogin']", 30000, null, "e4a287cb-188f-43f4-9a43-b069b0df9a31");
+                _orangehrmInfo = new RepoItemInfo(this, "OrangeHRM", ".//div[#'branding']/?/?/img[@alt='OrangeHRM']", 30000, null, "25fe93da-e7dd-43a4-b32c-9e3e219b6763");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("e2e8a552-6d4d-43ff-bd63-8519317e95d3")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("e2e8a552-6d4d-43ff-bd63-8519317e95d3")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TxtUsername item.
+            /// </summary>
+            [RepositoryItem("a668bf9e-4f35-4c9c-a6ff-8b573b8e8942")]
+            public virtual Ranorex.InputTag TxtUsername
+            {
+                get
+                {
+                    return _txtusernameInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TxtUsername item info.
+            /// </summary>
+            [RepositoryItemInfo("a668bf9e-4f35-4c9c-a6ff-8b573b8e8942")]
+            public virtual RepoItemInfo TxtUsernameInfo
+            {
+                get
+                {
+                    return _txtusernameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TxtPassword item.
+            /// </summary>
+            [RepositoryItem("b9639e2d-ca1a-490f-b8f3-485cccb4d722")]
+            public virtual Ranorex.InputTag TxtPassword
+            {
+                get
+                {
+                    return _txtpasswordInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TxtPassword item info.
+            /// </summary>
+            [RepositoryItemInfo("b9639e2d-ca1a-490f-b8f3-485cccb4d722")]
+            public virtual RepoItemInfo TxtPasswordInfo
+            {
+                get
+                {
+                    return _txtpasswordInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BtnLogin item.
+            /// </summary>
+            [RepositoryItem("e4a287cb-188f-43f4-9a43-b069b0df9a31")]
+            public virtual Ranorex.InputTag BtnLogin
+            {
+                get
+                {
+                    return _btnloginInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BtnLogin item info.
+            /// </summary>
+            [RepositoryItemInfo("e4a287cb-188f-43f4-9a43-b069b0df9a31")]
+            public virtual RepoItemInfo BtnLoginInfo
+            {
+                get
+                {
+                    return _btnloginInfo;
+                }
+            }
+
+            /// <summary>
+            /// The OrangeHRM item.
+            /// </summary>
+            [RepositoryItem("25fe93da-e7dd-43a4-b32c-9e3e219b6763")]
+            public virtual Ranorex.ImgTag OrangeHRM
+            {
+                get
+                {
+                    return _orangehrmInfo.CreateAdapter<Ranorex.ImgTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The OrangeHRM item info.
+            /// </summary>
+            [RepositoryItemInfo("25fe93da-e7dd-43a4-b32c-9e3e219b6763")]
+            public virtual RepoItemInfo OrangeHRMInfo
+            {
+                get
+                {
+                    return _orangehrmInfo;
+                }
+            }
+        }
+
     }
 #pragma warning restore 0436
 }

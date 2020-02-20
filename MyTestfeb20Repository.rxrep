@@ -1,18 +1,89 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<repository
-name="MyTestfeb20Repository"
-id="3926d171-91e7-4dd1-994b-4d29acf041aa">
-  <codegen
-  classname="MyTestfeb20Repository"
-  namespace="MyTestfeb20"/>
-  <rootfolder
-  name="Root"
-  id="f327def2-7fb2-4f3f-a561-1c0e1ccd2cdd"
-  searchtimeout="30000ms"
-  capname="unknown"
-  isrooted="True"
-  usecache="True">
-    <basepath/>
-  </rootfolder>
-  <variables/>
+﻿<repository
+id="3926d171-91e7-4dd1-994b-4d29acf041aa"
+name="MyTestfeb20Repository">
+	<codegen
+	classname="MyTestfeb20Repository"
+	namespace="MyTestfeb20">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="f327def2-7fb2-4f3f-a561-1c0e1ccd2cdd"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="e2e8a552-6d4d-43ff-bd63-8519317e95d3"
+		isrooted="True"
+		name="OrangeHRM"
+		refimgid="1df24d63-e50a-49f2-870c-548e3e4396a0"
+		refpath="/dom[@domain='opensource-demo.orangehrmlive.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="a668bf9e-4f35-4c9c-a6ff-8b573b8e8942"
+			name="TxtUsername"
+			refimgid="3ac74d66-39d2-404f-a456-53f6c887f5f1"
+			refpath="/dom[@domain='opensource-demo.orangehrmlive.com']//input[#'txtUsername']"
+			searchtimeout="30000ms">
+				/dom[@domain='opensource-demo.orangehrmlive.com']//input[#'txtUsername']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="b9639e2d-ca1a-490f-b8f3-485cccb4d722"
+			name="TxtPassword"
+			refimgid="27877453-6e81-429e-835b-5bcf0b6594a6"
+			refpath="/dom[@domain='opensource-demo.orangehrmlive.com']//input[#'txtPassword']"
+			searchtimeout="30000ms">
+				/dom[@domain='opensource-demo.orangehrmlive.com']//input[#'txtPassword']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="e4a287cb-188f-43f4-9a43-b069b0df9a31"
+			name="BtnLogin"
+			refimgid="9089f502-5251-4e01-9051-91ed7d987dad"
+			refpath="/dom[@domain='opensource-demo.orangehrmlive.com']//input[#'btnLogin']"
+			searchtimeout="30000ms">
+				/dom[@domain='opensource-demo.orangehrmlive.com']//input[#'btnLogin']
+			</item>
+			<item
+			addcaps="unknown,webelement,imgtag"
+			capname="imgtag"
+			id="25fe93da-e7dd-43a4-b32c-9e3e219b6763"
+			name="OrangeHRM"
+			refimgid="757bbba3-ff95-4f40-ae35-05ca809e1600"
+			refpath="/dom[@domain='opensource-demo.orangehrmlive.com']//div[#'branding']/a[@href='http://www.orangehrm.com/']/img[@alt='OrangeHRM']"
+			searchtimeout="30000ms">
+				/dom[@domain='opensource-demo.orangehrmlive.com']//div[#'branding']/?/?/img[@alt='OrangeHRM']
+			</item>
+			<basepath>
+				/dom[@domain='opensource-demo.orangehrmlive.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
 </repository>

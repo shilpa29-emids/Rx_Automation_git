@@ -79,6 +79,34 @@ namespace MyTestfeb20
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'OrangeHRM.TxtUsername' at 25;0.", repo.OrangeHRM.TxtUsernameInfo, new RecordItemIndex(0));
+            repo.OrangeHRM.TxtUsername.Click("25;0");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Admin' with focus on 'OrangeHRM.TxtUsername'.", repo.OrangeHRM.TxtUsernameInfo, new RecordItemIndex(1));
+            repo.OrangeHRM.TxtUsername.PressKeys("Admin");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'OrangeHRM.TxtUsername'.", repo.OrangeHRM.TxtUsernameInfo, new RecordItemIndex(2));
+            repo.OrangeHRM.TxtUsername.PressKeys("{Tab}");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'OrangeHRM.TxtPassword' at 22;6.", repo.OrangeHRM.TxtPasswordInfo, new RecordItemIndex(3));
+            repo.OrangeHRM.TxtPassword.Click("22;6");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'admin123' with focus on 'OrangeHRM.TxtPassword'.", repo.OrangeHRM.TxtPasswordInfo, new RecordItemIndex(4));
+            repo.OrangeHRM.TxtPassword.PressKeys("admin123");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'OrangeHRM.BtnLogin' at 20;4.", repo.OrangeHRM.BtnLoginInfo, new RecordItemIndex(5));
+            repo.OrangeHRM.BtnLogin.Click("20;4");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Src='https://opensource-demo.orangehrmlive.com/webres_5df488ddad8b23.30204013/themes/default/images/logo.png') on item 'OrangeHRM.OrangeHRM'.", repo.OrangeHRM.OrangeHRMInfo, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.OrangeHRM.OrangeHRMInfo, "Src", "https://opensource-demo.orangehrmlive.com/webres_5df488ddad8b23.30204013/themes/default/images/logo.png");
+            Delay.Milliseconds(100);
+            
         }
 
 #region Image Feature Data
