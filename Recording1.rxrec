@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="68cf48a3-3a49-4414-9db3-cd3bccfc05c2"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Recording1"
+	namespace="MyTestfeb20">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+	</recorditems>
+	<repository
+	id="3926d171-91e7-4dd1-994b-4d29acf041aa"
+	name="MyTestfeb20Repository"
+	relativepath="MyTestfeb20Repository.rxrep">
+		<codegen
+		classname="MyTestfeb20Repository"
+		namespace="MyTestfeb20">
+		</codegen>
+		<rootfolder
+		id="f327def2-7fb2-4f3f-a561-1c0e1ccd2cdd"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Recording1.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
